@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amresh Singh | Hosting Content Specialist</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:#07090f;color:#e6e2d8;overflow-x:hidden;font-size:15px;line-height:1.65}
+:root{
+  --gold:#c8a84b;--gold-dim:rgba(200,168,75,0.15);--gold-line:rgba(200,168,75,0.3);
+  --cream:#e6e2d8;--cream-60:rgba(230,226,216,0.6);--cream-20:rgba(230,226,216,0.12);
+  --dark:#07090f;--dark-2:#0c0e17;--dark-3:#10121c;
+  --border:rgba(230,226,216,0.07);--border-g:rgba(200,168,75,0.25);
+}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:15px 48px;background:rgba(7,9,15,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.nb{display:flex;flex-direction:column}
+.nn{font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cream)}
+.nr{font-size:10px;color:var(--gold);letter-spacing:2.5px;text-transform:uppercase;margin-top:2px}
+.nc{background:var(--gold);color:#07090f;padding:9px 22px;border-radius:3px;font-weight:600;font-size:12px;letter-spacing:0.8px;text-transform:uppercase;text-decoration:none;transition:opacity 0.2s}
+.nc:hover{opacity:0.82}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;grid-template-columns:1.1fr 0.9fr;padding-top:62px;overflow:hidden}
+.hl{display:flex;flex-direction:column;justify-content:center;padding:80px 60px 80px 60px;position:relative}
+.hl::after{content:'';position:absolute;bottom:0;right:0;width:1px;height:60%;background:linear-gradient(to bottom,transparent,var(--border),transparent)}
+.he{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--border-g);padding:6px 16px;border-radius:100px;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:32px;width:fit-content}
+.hed{width:5px;height:5px;border-radius:50%;background:var(--gold);animation:blink 2.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+.hh{font-family:'Playfair Display',serif;font-size:clamp(38px,5vw,62px);font-weight:900;line-height:1.06;letter-spacing:-1.5px;color:var(--cream);margin-bottom:6px}
+.hh2{font-family:'Playfair Display',serif;font-size:clamp(38px,5vw,62px);font-weight:900;line-height:1.06;letter-spacing:-1.5px;font-style:italic;color:rgba(230,226,216,0.18);margin-bottom:32px}
+.hs{font-size:16px;font-weight:300;color:var(--cream-60);line-height:1.8;max-width:460px;margin-bottom:40px}
+.hs strong{color:var(--cream);font-weight:500}
+.hb{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:64px}
+.bg{background:var(--gold);color:#07090f;padding:13px 28px;border-radius:3px;font-weight:600;font-size:12px;letter-spacing:0.8px;text-transform:uppercase;text-decoration:none;transition:opacity 0.2s,transform 0.15s;display:inline-block}
+.bg:hover{opacity:0.85;transform:translateY(-1px)}
+.bo{background:transparent;color:var(--cream);padding:13px 28px;border-radius:3px;border:1px solid var(--border-g);font-weight:500;font-size:12px;letter-spacing:0.8px;text-transform:uppercase;text-decoration:none;transition:all 0.2s;display:inline-block}
+.bo:hover{border-color:var(--gold);background:var(--gold-dim)}
+.hstats{display:flex;gap:0;border-top:1px solid var(--border);padding-top:32px}
+.hstat{flex:1;padding-right:28px;border-right:1px solid var(--border)}
+.hstat:first-child{padding-left:0}
+.hstat:last-child{border-right:none;padding-right:0}
+.sn{font-family:'Playfair Display',serif;font-size:34px;font-weight:800;color:var(--gold);line-height:1;margin-bottom:5px}
+.sl{font-size:11px;color:var(--cream-60);line-height:1.5;letter-spacing:0.3px}
+
+.hr{background:var(--dark-2);display:flex;flex-direction:column;justify-content:center;padding:80px 48px;position:relative;overflow:hidden}
+.hr::before{content:'';position:absolute;top:-120px;right:-120px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(200,168,75,0.07) 0%,transparent 70%)}
+.hr::after{content:'';position:absolute;bottom:-80px;left:-80px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(74,158,255,0.05) 0%,transparent 70%)}
+.hrgrid{position:relative;z-index:2}
+.hrt{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:20px;font-weight:600}
+.hri{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid var(--border)}
+.hri:last-child{border-bottom:none}
+.hric{width:28px;height:28px;border-radius:50%;border:1px solid var(--border-g);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.hrid{font-size:13px;color:var(--cream);font-weight:500;margin-bottom:3px}
+.hris{font-size:11px;color:var(--cream-60)}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+/* SECTIONS */
+.sec{padding:96px 60px}
+.st{display:flex;align-items:center;gap:10px;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;font-weight:600}
+.st::before{content:'';width:24px;height:1px;background:var(--gold)}
+.sh{font-family:'Playfair Display',serif;font-size:clamp(30px,3.5vw,44px);font-weight:800;line-height:1.1;color:var(--cream);margin-bottom:14px;letter-spacing:-0.5px}
+.ss{font-size:15px;color:var(--cream-60);max-width:500px;line-height:1.8;margin-bottom:56px}
+
+/* WORK SAMPLES */
+.work-sec{background:var(--dark)}
+.work-intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:56px}
+.work-note{background:var(--dark-3);border:1px solid var(--border-g);border-left:3px solid var(--gold);padding:24px 28px;border-radius:0 4px 4px 0}
+.work-note-title{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px}
+.work-note-text{font-size:13px;color:var(--cream-60);line-height:1.8}
+.work-cats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border)}
+.wcat{background:var(--dark);padding:20px 24px}
+.wcat-n{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.wcat-v{font-family:'Playfair Display',serif;font-size:24px;font-weight:800;color:var(--cream);margin-bottom:4px}
+.wcat-l{font-size:12px;color:var(--cream-60)}
+.samples-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border)}
+.sample{background:var(--dark-2);padding:32px 28px;position:relative;overflow:hidden;transition:background 0.25s}
+.sample::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 0.35s}
+.sample:hover{background:rgba(200,168,75,0.04)}
+.sample:hover::before{transform:scaleX(1)}
+.scat{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.scat-dot{width:4px;height:4px;border-radius:50%;background:var(--gold)}
+.stitle{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--cream);margin-bottom:10px;line-height:1.3}
+.sdesc{font-size:12px;color:var(--cream-60);line-height:1.8;margin-bottom:18px}
+.stags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:18px}
+.stag{font-size:10px;font-weight:500;letter-spacing:0.8px;text-transform:uppercase;padding:3px 9px;border:1px solid var(--border);color:var(--cream-60);border-radius:2px}
+.slink{font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:6px;border-bottom:1px solid var(--border-g);padding-bottom:2px;transition:border-color 0.2s}
+.slink:hover{border-color:var(--gold)}
+.sarr{font-size:10px}
+
+/* PROBLEM */
+.prob-sec{background:var(--dark-3)}
+.prob-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+.pcard{background:var(--dark-3);padding:44px 32px;transition:background 0.25s}
+.pcard:hover{background:rgba(200,168,75,0.04)}
+.pn{font-family:'Playfair Display',serif;font-size:56px;font-weight:900;color:rgba(200,168,75,0.08);line-height:1;margin-bottom:20px}
+.pt{font-weight:600;font-size:16px;color:var(--cream);margin-bottom:12px}
+.pd{font-size:13px;color:var(--cream-60);line-height:1.85}
+.pf{display:inline-block;margin-top:18px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;border-bottom:1px solid var(--border-g);padding-bottom:2px}
+
+/* SERVICES */
+.svc-sec{background:var(--dark)}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border)}
+.sc{background:var(--dark);padding:44px 40px;position:relative;overflow:hidden;transition:background 0.25s}
+.sc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:transform 0.4s}
+.sc:hover{background:rgba(200,168,75,0.03)}
+.sc:hover::before{transform:scaleX(1)}
+.scn{font-size:10px;font-weight:700;color:var(--gold);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:16px}
+.scname{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--cream);margin-bottom:12px;line-height:1.2}
+.scdesc{font-size:13px;color:var(--cream-60);line-height:1.85;margin-bottom:18px}
+.sctags{display:flex;flex-wrap:wrap;gap:5px}
+.sct{font-size:10px;font-weight:500;letter-spacing:0.8px;text-transform:uppercase;padding:3px 9px;border:1px solid var(--border);color:var(--cream-60);border-radius:2px;transition:all 0.2s}
+.sc:hover .sct{border-color:var(--border-g);color:var(--gold)}
+
+/* PROCESS */
+.proc-sec{background:var(--dark-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border)}
+.pc{padding:44px 28px;border-right:1px solid var(--border)}
+.pc:last-child{border-right:none}
+.pcn{font-family:'Playfair Display',serif;font-size:60px;font-weight:900;color:rgba(200,168,75,0.07);line-height:1;margin-bottom:22px}
+.pct{font-weight:600;font-size:13px;color:var(--gold);margin-bottom:10px;letter-spacing:0.3px}
+.pcd{font-size:12px;color:var(--cream-60);line-height:1.85}
+
+/* WHY */
+.why-sec{background:var(--dark-3)}
+.why-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:80px;align-items:start}
+.wpt{display:flex;gap:20px;padding:28px 0;border-bottom:1px solid var(--border)}
+.wpt:first-child{border-top:1px solid var(--border)}
+.wpn{font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:var(--gold);min-width:36px;padding-top:3px}
+.wpti{font-weight:600;font-size:15px;color:var(--cream);margin-bottom:8px}
+.wptx{font-size:13px;color:var(--cream-60);line-height:1.85}
+.qblock{border-left:2px solid var(--gold);padding:28px 0 28px 32px;margin-bottom:36px}
+.qt{font-family:'Playfair Display',serif;font-style:italic;font-size:17px;line-height:1.75;color:var(--cream);margin-bottom:18px}
+.qa{font-size:11px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;font-weight:600}
+.promise-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.pgc{background:var(--dark-3);padding:22px 24px;transition:background 0.2s}
+.pgc:hover{background:rgba(200,168,75,0.04)}
+.pgt{font-weight:600;font-size:13px;color:var(--cream);margin-bottom:6px}
+.pgd{font-size:12px;color:var(--cream-60);line-height:1.7}
+
+/* VOLUME */
+.vol-sec{background:var(--dark);border-top:1px solid var(--border)}
+.vol-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:40px}
+.vc{background:var(--dark);padding:32px 28px;text-align:center}
+.vn{font-family:'Playfair Display',serif;font-size:40px;font-weight:800;color:var(--gold);line-height:1;margin-bottom:6px}
+.vl{font-size:12px;color:var(--cream-60);line-height:1.5}
+
+/* TOOLS */
+.tools-sec{background:var(--dark-2);border-top:1px solid var(--border)}
+.tools-flex{display:flex;flex-wrap:wrap;gap:10px}
+.tool{padding:8px 18px;border:1px solid var(--border);font-size:12px;font-weight:500;color:var(--cream-60);letter-spacing:0.3px;border-radius:100px;transition:all 0.2s;cursor:default}
+.tool:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-dim)}
+.tool.f{border-color:var(--border-g);color:var(--gold)}
+
+/* CTA */
+.cta-sec{background:var(--dark-3);border-top:1px solid var(--border-g);text-align:center;padding:96px 60px;position:relative;overflow:hidden}
+.cta-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 70% at 50% 100%,rgba(200,168,75,0.06) 0%,transparent 60%);pointer-events:none}
+.ch{font-family:'Playfair Display',serif;font-size:clamp(32px,4.5vw,54px);font-weight:900;color:var(--cream);margin-bottom:18px;letter-spacing:-1px;line-height:1.1}
+.ch em{color:var(--gold);font-style:italic}
+.cs{font-size:16px;color:var(--cream-60);max-width:480px;margin:0 auto 44px;line-height:1.8}
+.cbtns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:40px}
+.cinfo{display:flex;justify-content:center;gap:36px;flex-wrap:wrap;font-size:12px;color:var(--cream-60)}
+.cinfo span{display:flex;align-items:center;gap:8px}
+.ck{width:14px;height:14px;border-radius:50%;border:1px solid var(--gold);display:inline-flex;align-items:center;justify-content:center;color:var(--gold);font-size:8px;font-weight:700;flex-shrink:0}
+
+/* FOOTER */
+footer{background:#04060c;border-top:1px solid var(--border);padding:32px 60px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+.fn{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--cream)}
+.fr{font-size:10px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-top:3px}
+.flinks{display:flex;gap:22px;flex-wrap:wrap}
+.flinks a{font-size:12px;color:var(--cream-60);text-decoration:none;letter-spacing:0.3px;transition:color 0.2s}
+.flinks a:hover{color:var(--gold)}
+
+/* ANIM */
+.fi{opacity:0;transform:translateY(22px);transition:opacity 0.6s ease,transform 0.6s ease}
+.fi.in{opacity:1;transform:none}
+.d1{transition-delay:0.1s}.d2{transition-delay:0.2s}.d3{transition-delay:0.3s}
+
+@media(max-width:900px){
+  nav{padding:14px 24px}
+  .hero{grid-template-columns:1fr}
+  .hl,.hr{padding:60px 24px}
+  .hstats{flex-wrap:wrap;gap:24px}
+  .hstat{border-right:none;border-bottom:1px solid var(--border);padding:0 0 20px;flex:0 0 45%}
+  .hstat:last-child{border-bottom:none}
+  .sec{padding:72px 24px}
+  .prob-grid,.svc-grid,.proc-grid,.samples-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr;gap:48px}
+  .work-intro{grid-template-columns:1fr}
+  .vol-grid{grid-template-columns:1fr 1fr}
+  .work-cats{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nb">
+    <div class="nn">Amresh Singh</div>
+    <div class="nr">Hosting Content Specialist</div>
+  </div>
+  <a href="mailto:amreshcpr@gmail.com?subject=Free Page Audit Request" class="nc">Free Page Audit</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hl">
+    <div class="he"><span class="hed"></span>Hosting Content Specialist</div>
+    <h1 class="hh">Your hosting page<br>explains the product.</h1>
+    <div class="hh2">It should close the deal.</div>
+    <p class="hs">After <strong>14 years in corporate leadership</strong>, I write dedicated server, VPS, GPU server, and AI infrastructure content for hosting companies worldwide. Technical accuracy. Buyer language. Content that converts.</p>
+    <div class="hb">
+      <a href="mailto:amreshcpr@gmail.com?subject=Free Page Audit Request" class="bg">Request Free Page Audit</a>
+      <a href="#work" class="bo">View Selected Work</a>
+    </div>
+    <div class="hstats">
+      <div class="hstat"><div class="sn">100+</div><div class="sl">Live service pages written and published</div></div>
+      <div class="hstat"><div class="sn">80+</div><div class="sl">Technical blog posts across GPU and hosting topics</div></div>
+      <div class="hstat"><div class="sn">14yr</div><div class="sl">Corporate leadership experience</div></div>
+      <div class="hstat"><div class="sn">2</div><div class="sl">Active hosting company clients</div></div>
+    </div>
+  </div>
+  <div class="hr">
+    <div class="hrgrid">
+      <div class="hrt">What I Write for Hosting Companies</div>
+      <div class="hri"><div class="hric"><div class="dot"></div></div><div><div class="hrid">Dedicated Server Pages</div><div class="hris">Global, regional, and city-level location pages</div></div></div>
+      <div class="hri"><div class="hric"><div class="dot"></div></div><div><div class="hrid">GPU and AI Server Pages</div><div class="hris">H100, H200, B200, bare metal GPU infrastructure</div></div></div>
+      <div class="hri"><div class="hric"><div class="dot"></div></div><div><div class="hrid">VPS and Cloud Pages</div><div class="hris">Buyer-focused service and product pages</div></div></div>
+      <div class="hri"><div class="hric"><div class="dot"></div></div><div><div class="hrid">Homepage and About Copy</div><div class="hris">New copy and complete rewrites</div></div></div>
+      <div class="hri"><div class="hric"><div class="dot"></div></div><div><div class="hrid">Technical Blog Posts</div><div class="hris">GPU comparisons, buying guides, hosting trends</div></div></div>
+      <div class="hri"><div class="hric"><div class="dot"></div></div><div><div class="hrid">Email, Whitepapers, Case Studies</div><div class="hris">Long-form authority content for hosting brands</div></div></div>
+      <div class="hri"><div class="hric"><div class="dot"></div></div><div><div class="hrid">Policy and Legal Pages</div><div class="hris">Terms, SLA, privacy policy, refund policy</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED WORK -->
+<section class="work-sec sec" id="work">
+  <div class="st">Selected Work</div>
+  <h2 class="sh">100+ live pages across two<br>active hosting company clients</h2>
+  <div class="work-intro">
+    <div>
+      <p class="ss" style="margin-bottom:20px">All content below is live and indexed. Client names are not disclosed per confidentiality agreement. Full samples and context available on request.</p>
+      <div class="work-note">
+        <div class="work-note-title">Note on Client Confidentiality</div>
+        <div class="work-note-text">I write as a ghostwriter for two hosting companies. The work is published under their brand. I can share the live URLs, describe the brief, and walk you through the strategy behind each piece. I cannot disclose client names publicly.</div>
+      </div>
+    </div>
+    <div class="work-cats">
+      <div class="wcat"><div class="wcat-n">Service Pages</div><div class="wcat-v">100+</div><div class="wcat-l">Dedicated, VPS, GPU, Cloud</div></div>
+      <div class="wcat"><div class="wcat-n">Blog Posts</div><div class="wcat-v">80+</div><div class="wcat-l">Technical hosting and GPU content</div></div>
+      <div class="wcat"><div class="wcat-n">Locations Covered</div><div class="wcat-v">160+</div><div class="wcat-l">Global city and region pages</div></div>
+      <div class="wcat"><div class="wcat-n">Words Written</div><div class="wcat-v">500K+</div><div class="wcat-l">Across both clients combined</div></div>
+    </div>
+  </div>
+  <div class="samples-grid">
+    <div class="sample fi">
+      <div class="scat"><span class="scat-dot"></span>GPU Server Page</div>
+      <div class="stitle">NVIDIA H100 GPU Server Page</div>
+      <div class="sdesc">Full service page for H100 SXM bare metal infrastructure. Written for both the engineer evaluating specs and the founder approving the AI training budget. Covers HBM3e, NVLink, LLM inference use cases, and buyer-intent keywords.</div>
+      <div class="stags"><span class="stag">H100</span><span class="stag">AI Infrastructure</span><span class="stag">Buyer Intent</span><span class="stag">Technical SEO</span></div>
+      <a href="https://www.hostrunway.com/gpu-server/nvidia-h100.php" target="_blank" class="slink">View Live Page <span class="sarr">→</span></a>
+    </div>
+    <div class="sample fi d1">
+      <div class="scat"><span class="scat-dot"></span>GPU Server Page</div>
+      <div class="stitle">NVIDIA H200 GPU Server Page</div>
+      <div class="sdesc">Service page for H200 SXM5 infrastructure with 141GB HBM3e memory. Technical content written for AI teams and decision makers. Covers LLM training, inference workloads, and competitive positioning against H100.</div>
+      <div class="stags"><span class="stag">H200</span><span class="stag">LLM Inference</span><span class="stag">HBM3e</span><span class="stag">Enterprise AI</span></div>
+      <a href="https://www.hostrunway.com/gpu-server/nvidia-h200.php" target="_blank" class="slink">View Live Page <span class="sarr">→</span></a>
+    </div>
+    <div class="sample fi d2">
+      <div class="scat"><span class="scat-dot"></span>Core Service Page</div>
+      <div class="stitle">Dedicated Server Main Service Page</div>
+      <div class="sdesc">Primary dedicated server service page covering global bare metal infrastructure. Buyer-focused copy connecting specs to business outcomes. Covers enterprise use cases, location coverage, and conversion-optimized structure.</div>
+      <div class="stags"><span class="stag">Bare Metal</span><span class="stag">Global Coverage</span><span class="stag">Conversion Copy</span></div>
+      <a href="https://www.hostrunway.com/dedicated-servers.php" target="_blank" class="slink">View Live Page <span class="sarr">→</span></a>
+    </div>
+    <div class="sample fi">
+      <div class="scat"><span class="scat-dot"></span>Location Page</div>
+      <div class="stitle">Dedicated Server USA — Location Page</div>
+      <div class="sdesc">US-specific dedicated server page targeting high-intent buyer keywords. Explains latency advantages, compliance relevance, and US data center value for American businesses. Part of a 50+ city location series.</div>
+      <div class="stags"><span class="stag">Location SEO</span><span class="stag">Buyer Intent</span><span class="stag">US Market</span></div>
+      <a href="https://www.hostrunway.com/dedicated-servers-usa.php" target="_blank" class="slink">View Live Page <span class="sarr">→</span></a>
+    </div>
+    <div class="sample fi d1">
+      <div class="scat"><span class="scat-dot"></span>Location Page</div>
+      <div class="stitle">Dedicated Server Frankfurt — City Page</div>
+      <div class="sdesc">Frankfurt data center location page. Explains why Frankfurt is a Tier-1 EU internet hub, GDPR data residency benefits, and latency advantages for European workloads. Part of a Europe-wide location content series.</div>
+      <div class="stags"><span class="stag">Frankfurt</span><span class="stag">EU Compliance</span><span class="stag">Local SEO</span><span class="stag">GDPR</span></div>
+      <a href="https://www.hostrunway.com/germany/dedicated-server-frankfurt.php" target="_blank" class="slink">View Live Page <span class="sarr">→</span></a>
+    </div>
+    <div class="sample fi d2">
+      <div class="scat"><span class="scat-dot"></span>Location Page</div>
+      <div class="stitle">Dedicated Server Singapore — City Page</div>
+      <div class="sdesc">Singapore location page for a Southeast Asia data center hub. Covers latency benefits for APAC markets, connectivity to major submarine cables, and buyer-intent positioning for regional businesses and e-commerce.</div>
+      <div class="stags"><span class="stag">Singapore</span><span class="stag">APAC</span><span class="stag">Low Latency</span><span class="stag">Buyer Intent</span></div>
+      <a href="https://www.hostrunway.com/dedicated-servers-singapore.php" target="_blank" class="slink">View Live Page <span class="sarr">→</span></a>
+    </div>
+    <div class="sample fi">
+      <div class="scat"><span class="scat-dot"></span>Core Service Page</div>
+      <div class="stitle">VPS Server Main Page</div>
+      <div class="sdesc">Primary VPS service page written to help buyers navigate the VPS-vs-shared and VPS-vs-dedicated decision. Buyer-first structure, use-case specific sections, and global cloud VPS positioning for a competitive market.</div>
+      <div class="stags"><span class="stag">VPS</span><span class="stag">Cloud Hosting</span><span class="stag">Comparison Content</span></div>
+      <a href="https://www.hostrunway.com/vps-servers.php" target="_blank" class="slink">View Live Page <span class="sarr">→</span></a>
+    </div>
+    <div class="sample fi d1">
+      <div class="scat"><span class="scat-dot"></span>Technical Blog Post</div>
+      <div class="stitle">H100 vs B200 vs GB200: Which GPU to Rent for AI in 2026</div>
+      <div class="sdesc">In-depth GPU comparison blog post covering NVIDIA's enterprise GPU lineup. Written for AI teams comparing infrastructure options. Covers training vs inference use cases, memory bandwidth, and cost-per-performance analysis.</div>
+      <div class="stags"><span class="stag">GPU Comparison</span><span class="stag">AI Training</span><span class="stag">LLM</span><span class="stag">Buyer Guide</span></div>
+      <a href="https://www.hostrunway.com/blog/" target="_blank" class="slink">View Blog <span class="sarr">→</span></a>
+    </div>
+    <div class="sample fi d2">
+      <div class="scat"><span class="scat-dot"></span>Special Format Page</div>
+      <div class="stitle">Dedicated Server with 256 IPs — Technical Spec Page</div>
+      <div class="sdesc">Highly technical service page covering /24 IP subnet dedicated servers. Targets advanced buyers: SEO professionals, bulk mailers, and businesses needing ARIN IPv4 blocks with RDNS. Complex product explained in plain buyer language.</div>
+      <div class="stags"><span class="stag">Technical SEO</span><span class="stag">IPv4</span><span class="stag">RDNS</span><span class="stag">Enterprise</span></div>
+      <a href="https://www.hostrunway.com/dedicated-server-with-256-ips.php" target="_blank" class="slink">View Live Page <span class="sarr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="prob-sec sec">
+  <div class="st">The Problem</div>
+  <h2 class="sh">Why hosting pages lose buyers<br>before the sale even starts</h2>
+  <p class="ss">Most hosting service pages are technically accurate. The specs are right. The features are listed. But buyers still leave without converting. Here is why.</p>
+  <div class="prob-grid">
+    <div class="pcard fi"><div class="pn">01</div><div class="pt">Specs Without Context</div><div class="pd">CPU cores, RAM, NVMe storage. All accurate. But buyers do not purchase specs. They purchase solutions to problems. A page that lists specs without connecting them to business outcomes loses the sale silently.</div><div class="pf">Fix: Every spec becomes a buyer outcome</div></div>
+    <div class="pcard fi d1"><div class="pn">02</div><div class="pt">Unanswered Buyer Questions</div><div class="pd">Will this handle my traffic spike? What happens at 3 AM when something breaks? Can I upgrade without downtime? Buyers ask these internally. Pages that do not answer them send buyers to a competitor tab.</div><div class="pf">Fix: Unspoken questions answered directly</div></div>
+    <div class="pcard fi d2"><div class="pn">03</div><div class="pt">No Clear Buyer Identity</div><div class="pd">Pages written for everyone convert no one. A WooCommerce store owner and a developer running AI workloads have completely different needs. Generic pages fail both of them at the same time.</div><div class="pf">Fix: One buyer type, spoken to with precision</div></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="svc-sec sec">
+  <div class="st">Services</div>
+  <h2 class="sh">Hosting content built for<br>the buyer, not the engineer</h2>
+  <p class="ss">Every piece I write has one purpose: helping a hosting buyer feel confident enough to choose your product over the five other tabs they have open right now.</p>
+  <div class="svc-grid">
+    <div class="sc fi"><div class="scn">01</div><div class="scname">Dedicated Server Pages</div><div class="scdesc">New service pages and complete rewrites. Buyer-focused copy that translates raw specifications into business outcomes. Clear who it is for, clear why it matters, and clear what happens next.</div><div class="sctags"><span class="sct">New Pages</span><span class="sct">Rewrites</span><span class="sct">Bare Metal</span><span class="sct">Location Series</span></div></div>
+    <div class="sc fi d1"><div class="scn">02</div><div class="scname">GPU and AI Server Pages</div><div class="scdesc">Technical content for H100, H200, B200, and bare metal GPU infrastructure. Written for both the engineer evaluating specs and the founder approving the budget. New pages and rewrites both.</div><div class="sctags"><span class="sct">H100 / H200 / B200</span><span class="sct">AI Infrastructure</span><span class="sct">NVLink</span><span class="sct">HBM3e</span></div></div>
+    <div class="sc fi d2"><div class="scn">03</div><div class="scname">VPS and Cloud Pages</div><div class="scdesc">New and rewritten VPS pages that explain the VPS-vs-shared and VPS-vs-dedicated decision clearly. Buyers arrive at checkout confident rather than confused about which plan fits their situation.</div><div class="sctags"><span class="sct">New Pages</span><span class="sct">Rewrites</span><span class="sct">Cloud VPS</span><span class="sct">Comparison Content</span></div></div>
+    <div class="sc fi d3"><div class="scn">04</div><div class="scname">Homepage and About Copy</div><div class="scdesc">New homepage copy and complete rewrites. Your homepage should open with your buyer's situation, not your company's capabilities. Copy that replaces generic positioning with messaging that resonates immediately.</div><div class="sctags"><span class="sct">New Copy</span><span class="sct">Rewrites</span><span class="sct">Positioning</span><span class="sct">Brand Voice</span></div></div>
+    <div class="sc fi"><div class="scn">05</div><div class="scname">Location and Data Center Pages</div><div class="scdesc">New high-intent location pages for dedicated servers and VPS. Each page explains why that specific location matters to the buyer's business. Not templated copies with a city name swapped in.</div><div class="sctags"><span class="sct">City Pages</span><span class="sct">Region Pages</span><span class="sct">Local SEO</span><span class="sct">Data Residency</span></div></div>
+    <div class="sc fi d1"><div class="scn">06</div><div class="scname">Technical Blog Posts</div><div class="scdesc">Long-form hosting content: GPU comparison guides, buying articles, technical explainers written in plain language for buyers. Organic traffic that attracts the right audience at the right stage of the decision.</div><div class="sctags"><span class="sct">GPU Comparisons</span><span class="sct">Buyer Guides</span><span class="sct">SEO Structure</span><span class="sct">Thought Leadership</span></div></div>
+    <div class="sc fi d2"><div class="scn">07</div><div class="scname">Email and Newsletter Writing</div><div class="scdesc">Hosting-specific email campaigns and newsletters. Product announcements, onboarding sequences, and retention emails written to inform, engage, and reduce churn for technical hosting audiences.</div><div class="sctags"><span class="sct">Campaigns</span><span class="sct">Onboarding</span><span class="sct">Retention</span><span class="sct">Newsletters</span></div></div>
+    <div class="sc fi d3"><div class="scn">08</div><div class="scname">Whitepapers and Case Studies</div><div class="scdesc">In-depth technical content that establishes authority for hosting companies. Infrastructure whitepapers, customer success stories, and solution briefs that support sales cycles and build long-term trust.</div><div class="sctags"><span class="sct">Whitepapers</span><span class="sct">Case Studies</span><span class="sct">Solution Briefs</span><span class="sct">Authority Content</span></div></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="proc-sec sec">
+  <div class="st">How I Work</div>
+  <h2 class="sh">What you get on every<br>single piece of content</h2>
+  <p class="ss">No guesswork. No generic templates. Every piece goes through this same process.</p>
+  <div class="proc-grid">
+    <div class="pc fi"><div class="pcn">01</div><div class="pct">Page and Buyer Research</div><div class="pcd">I review your current page, your competitors, and the specific buyer type you are targeting. I identify every gap before writing a single word.</div></div>
+    <div class="pc fi d1"><div class="pcn">02</div><div class="pct">Technical Understanding</div><div class="pcd">I learn the product. Specs, architecture, pricing, support model. I do not write about hosting products I do not already understand or cannot research deeply.</div></div>
+    <div class="pc fi d2"><div class="pcn">03</div><div class="pct">Buyer-First Draft</div><div class="pcd">Every draft opens with the buyer's situation. Features are presented as outcomes. Objections are handled before they are voiced. One revision round is included.</div></div>
+    <div class="pc fi d3"><div class="pcn">04</div><div class="pct">SEO and Delivery</div><div class="pcd">Final content includes keyword placement, meta title, meta description, and structured heading hierarchy. Delivered in Google Docs, ready to publish.</div></div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why-sec sec">
+  <div class="st">Why Work With Me</div>
+  <h2 class="sh">Not a generalist writer.<br>A hosting specialist.</h2>
+  <div class="why-grid">
+    <div>
+      <div class="wpt fi"><div class="wpn">01</div><div><div class="wpti">I know the product</div><div class="wptx">I understand the difference between VPS and bare metal. I know what NVLink does, what HBM3e memory means, and how to explain NVMe SSD to a buyer who just wants fast pages. I have written 100+ live service pages across dedicated, VPS, GPU, and cloud hosting products.</div></div></div>
+      <div class="wpt fi d1"><div class="wpn">02</div><div><div class="wpti">I know the buyer</div><div class="wptx">14 years in corporate leadership taught me how business decisions are actually made. I write for the person holding the budget, not just the engineer evaluating the specs. Both people are usually in the same room.</div></div></div>
+      <div class="wpt fi d2"><div class="wpn">03</div><div><div class="wpti">Free audit before you commit</div><div class="wptx">Before any paid work, I will audit one of your pages at no cost. You see exactly how I think, what I find, and what I would fix. No pitch. No obligation. Just feedback you keep regardless of what happens next.</div></div></div>
+      <div class="wpt fi d3"><div class="wpn">04</div><div><div class="wpti">Flexible engagement</div><div class="wptx">Work with me per page or per article for specific content gaps, or on a monthly retainer for consistent content output. Scope and pricing are discussed openly before any work begins. No surprises.</div></div></div>
+    </div>
+    <div>
+      <div class="qblock">
+        <div class="qt">"The hosting industry has a writing problem. Products are excellent. Infrastructure is solid. But the pages describing all of this are written for engineers. The buyer making the final decision is frequently not an engineer. That gap is what I close."</div>
+        <div class="qa">Amresh Singh &nbsp;/&nbsp; Hosting Content Specialist</div>
+      </div>
+      <div class="promise-grid">
+        <div class="pgc"><div class="pgt">100% Original</div><div class="pgd">Plagiarism-free. Human-crafted. Passes AI detection on every piece.</div></div>
+        <div class="pgc"><div class="pgt">On-Time Delivery</div><div class="pgd">Deadlines are treated as fixed commitments, not suggestions.</div></div>
+        <div class="pgc"><div class="pgt">SEO and AEO Ready</div><div class="pgd">Structured for search engines and answer engines. Meta included.</div></div>
+        <div class="pgc"><div class="pgt">One Revision Round</div><div class="pgd">Included on every piece. Feedback addressed within 48 hours.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOLUME -->
+<section class="vol-sec sec">
+  <div class="st">Content Volume</div>
+  <h2 class="sh">What two active hosting clients<br>look like in numbers</h2>
+  <p class="ss" style="margin-bottom:40px">This is the actual output from two ongoing client relationships. These numbers are what a new hosting client can expect when working with me consistently.</p>
+  <div class="vol-grid">
+    <div class="vc fi"><div class="vn">100+</div><div class="vl">Live service pages written across dedicated, VPS, GPU, and cloud products</div></div>
+    <div class="vc fi d1"><div class="vn">80+</div><div class="vl">Technical blog posts published on GPU comparisons, hosting guides, and trends</div></div>
+    <div class="vc fi d2"><div class="vn">160+</div><div class="vl">Global city and region location pages written for a single hosting client</div></div>
+    <div class="vc fi d3"><div class="vn">500K+</div><div class="vl">Total words written and published across both active hosting clients</div></div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="tools-sec sec">
+  <div class="st">Tools and Skills</div>
+  <h2 class="sh">Built for technical<br>hosting content</h2>
+  <p class="ss" style="margin-bottom:36px">The tools I use every day to research, write, optimize, and deliver hosting content at a professional standard.</p>
+  <div class="tools-flex">
+    <span class="tool f">Surfer SEO</span><span class="tool f">SEMrush</span><span class="tool f">Ahrefs</span><span class="tool f">Rank Math Pro</span>
+    <span class="tool">WordPress</span><span class="tool">Google Analytics</span><span class="tool">Hemingway Editor</span><span class="tool">Grammarly</span>
+    <span class="tool">Google Docs</span><span class="tool">Canva</span><span class="tool">Hunter.io</span><span class="tool">ChatGPT (support)</span>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="cta-bg"></div>
+  <div style="position:relative;z-index:2">
+    <div class="st" style="justify-content:center;margin-bottom:20px">Start Here</div>
+    <h2 class="ch">One free page audit.<br><em>No strings attached.</em></h2>
+    <p class="cs">Send me one URL from your hosting site. I will review it and tell you exactly what is keeping buyers from converting. You keep the feedback whether we work together or not.</p>
+    <div class="cbtns">
+      <a href="mailto:amreshcpr@gmail.com?subject=Free Page Audit Request" class="bg">Request Free Audit</a>
+      <a href="https://linkedin.com/in/amreshks" target="_blank" class="bo">Connect on LinkedIn</a>
+    </div>
+    <div class="cinfo">
+      <span><span class="ck">+</span>No cost, no obligation</span>
+      <span><span class="ck">+</span>Delivered within 48 hours</span>
+      <span><span class="ck">+</span>Specific to your actual page</span>
+      <span><span class="ck">+</span>Full samples on request</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div><div class="fn">Amresh Singh</div><div class="fr">Hosting Content Specialist</div></div>
+  <div class="flinks">
+    <a href="mailto:amreshcpr@gmail.com">amreshcpr@gmail.com</a>
+    <a href="tel:+919835063329">+91 98350 63329</a>
+    <a href="https://linkedin.com/in/amreshks" target="_blank">LinkedIn</a>
+    <a href="https://drive.google.com/drive/folders/1ySFLhICKYV9PQk504rXiEkcR3PL8-jGG" target="_blank">Writing Samples</a>
+  </div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('in')})},{threshold:0.1});
+document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
